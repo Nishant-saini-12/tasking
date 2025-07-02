@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+    rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+     <!-- href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <img src="mylo.png" alt="" class="fixed w-6/12 top-0 left-0">
+    <div class="w-6/12 ml-[50%] p-12 space-y-8" >
+        <div class="flex flex-center justify-center">
+            <i class="ri-edit-circle-fill text-5xl text-rose-600"></i>
+            <h1 class="text-4xl font-bold text-indigo-200 colot-rose-600">Task<span class="text-indigo-600">ing</span></h1>
+        </div>
+        <div class="m-4 flex gag-5">
+            <input oninput="filter()" class="p-3 border border-gray-300 rounded flex-1" placeholder="search this list"/>
+            <button class="px-4 py-2 border bg-rose-400 hover:bg-black text-white font-medium rounded " onclick="openDialog()">
+                <i class="ri-add-line"></i>
+                new task
+            </button>
+        </div>
+           <table class="w-full mt-12 ">
+             <tr class="bg-slate-100 text-left">
+            <th class="p-3 bg-indigo-400">SN</th>
+            <th class="p-3">TAASK</th>
+           <th class="p-3">date</th>
+           <th class="p-3">status</th>
+           <th class="p-3">ACTORS</th>
+        </tr>
+        <!-- <tr class="border-b border-black gap-3">
+            <td class="p-3.5"> 1</td>
+            <td class="text-gray-600">uplode html new video on youtube !!</td>
+            <td>
+                <div class="flex item center gap-3">
+                    <button class="hover:bg-violet-500 bg-green-400 w-8 h-8 rounded full item-center justify-center text-white">
+                        <i class="ri-edit-box-fill"></i>
+                    </button>
+                       <button class="hover:bg-amber-500 bg-green-400 w-8 h-8 rounded full item-center justify-center text-white">
+                        <i class="ri-delete-bin-6-line"></i>
+                    </button>
+                </div>
+            </td>
+        </tr> -->
+        <tbody id="ui-container">
+
+        </tbody>
+      
+
+    </table>
+       
+    </div>
+    
+    <script src="todolist.js"></script>
+</body>
+</html>
